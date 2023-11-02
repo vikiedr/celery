@@ -7,4 +7,4 @@ from celery import Celery
 app = Celery('alzcript')
 
 app.conf.broker_url = 'amqp://vikiedr:bb4c2d870181d2b4fc6de2c1989295ba@rabbitmq-t6uy:5672'  # TODO z env
-app.autodiscover_tasks()
+app.autodiscover_tasks(lambda: [n.name for n in app.get_app_configs()])
