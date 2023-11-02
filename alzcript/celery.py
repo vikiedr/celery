@@ -11,4 +11,5 @@ app.autodiscover_tasks()
 
 @app.task(name='test')  # Named task
 def test():
-    print('Testing')
+    print('Testing.............')
+    return 'Vysledek ---- '
