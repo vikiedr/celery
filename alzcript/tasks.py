@@ -1,5 +1,6 @@
 from celery import Celery, shared_task
 
+print('22222222222222222222222222222222222222222222222222222222')
 app = Celery('alzcript')
 app.conf.broker_url = 'amqp://vikiedr:bb4c2d870181d2b4fc6de2c1989295ba@rabbitmq-t6uy:5672'
 
